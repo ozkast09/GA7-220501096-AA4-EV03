@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ProductCreationForm.css'; // Importa  estilos
 
 function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locations, suppliers }) {
   // Estados para los campos del formulario
@@ -108,7 +109,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
       <h2>Crear Nuevo Producto</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Nombre del Producto:</label>
+          <label htmlFor="name">Nombre del Producto:</label><br></br>
           <input
             type="text"
             id="name"
@@ -118,7 +119,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
           />
         </div>
         <div>
-          <label htmlFor="code">Código:</label>
+          <label htmlFor="code">Código:</label><br></br>
           <input
             type="text"
             id="code"
@@ -128,7 +129,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
           />
         </div>
         <div>
-          <label htmlFor="description">Descripción:</label>
+          <label htmlFor="description">Descripción:</label><br></br>
           <textarea
             id="description"
             value={description}
@@ -137,7 +138,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
         </div>
 
         <div>
-          <label htmlFor="unitOfMeasure">Unidad de Medida:</label>
+          <label htmlFor="unitOfMeasure">Unidad de Medida:</label><br></br>
           <select
             id="unitOfMeasure"
             value={unitOfMeasureId}
@@ -167,7 +168,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
         </div>
 
         <div>
-          <label htmlFor="brand">Marca:</label>
+          <label htmlFor="brand">Marca:</label><br></br>
           <select
             id="brand"
             value={brandId}
@@ -197,7 +198,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
         </div>
 
         <div>
-          <label htmlFor="location">Ubicación:</label>
+          <label htmlFor="location">Ubicación:</label><br></br>
           <select
             id="location"
             value={locationId}
@@ -227,7 +228,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
         </div>
 
         <div>
-          <label htmlFor="supplier">Proveedor:</label>
+          <label htmlFor="supplier">Proveedor:</label><br></br>
           <select
             id="supplier"
             value={supplierId}
@@ -239,6 +240,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
               <option key={supplier.id} value={supplier.id}>{supplier.name}</option>
             ))}
           </select>
+          
           <button type="button" onClick={() => setShowNewSupplier(true)}>
             Crear Nuevo Proveedor
           </button>
@@ -260,7 +262,7 @@ function ProductCreationForm({ onProductCreated, unitsOfMeasure, brands, locatio
               <button type="button" onClick={() => setShowNewSupplier(false)}>Cancelar</button>
             </div>
           )}
-        </div>
+        </div><br></br>
 
         <button type="submit">Crear Producto</button>
       </form>

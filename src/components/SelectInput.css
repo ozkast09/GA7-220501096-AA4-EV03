@@ -1,0 +1,23 @@
+/* src/components/SelectInput.css */
+
+.select-input {
+    width: 100%; /* O un ancho específico */
+    padding: 0.5rem;
+    margin-bottom: 1rem; /* Espacio inferior */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el ancho */
+  }
+  
+  .select-input:focus {
+    outline: none;
+    border-color: #007bff; /* Color de borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+  }
+  
+  /* Opcional: Estilos para las opciones dentro del select */
+  .select-input option {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './FormInput.css'; // Importa los estilos CSS para este componente (opcional)
+import './FormInput.css'; // Importa los estilos CSS 
 
 function FormInput({
   type = 'text', // Tipo de input por defecto: texto

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './BrandCreationForm.css'; // Importa  estilos
 
 function BrandCreationForm() {
   const [brandName, setBrandName] = useState('');
@@ -46,7 +47,7 @@ function BrandCreationForm() {
       {successMessage && <div className="success-message">{successMessage}</div>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="brandName">Nombre de la Marca:</label>
+          <label htmlFor="brandName">Nombre de la Marca:</label><br></br>
           <input
             type="text"
             id="brandName"
@@ -54,7 +55,7 @@ function BrandCreationForm() {
             onChange={handleInputChange}
             required
           />
-        </div>
+        </div><br></br>
         <button type="submit">Crear Marca</button>
       </form>
     </div>

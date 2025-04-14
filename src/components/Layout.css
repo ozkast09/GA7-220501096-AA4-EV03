@@ -1,0 +1,29 @@
+/* src/components/Layout.css */
+
+.app-layout {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el layout ocupe al menos la altura de la ventana */
+    font-family: sans-serif; /* Fuente de texto base */
+  }
+  
+  header {
+    background-color: #6a6969; /* Color de fondo del encabezado */
+    color: white;
+    padding: 1rem 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+    border-bottom: 1px solid #ccc; /* Borde inferior del encabezado */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Permite que el contenido principal crezca para ocupar el espacio restante */
+    padding: 20px; /* Espaciado interno del contenido principal */
+  }
+  
+  footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 1rem 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Centra el texto del pie de página */
+    border-top: 1px solid #555; /* Borde superior del pie de página */
+  }

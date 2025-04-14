@@ -1,0 +1,97 @@
+/* src/components/ProductCreationForm.css */
+
+.product-creation-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px; /* Aumenta un poco el padding para más espacio interior */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Bordes un poco más redondeados */
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Aumenta el espacio entre los grupos de campos */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* Más espacio entre la etiqueta y el campo */
+  font-weight: bold;
+  color: #333; /* Texto de etiqueta más oscuro */
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px; /* Aumenta el padding interior de los campos */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Bordes más redondeados para los campos */
+  box-sizing: border-box;
+  font-size: 1em; /* Tamaño de fuente un poco más grande */
+}
+.supplier-select {
+  margin-bottom: 10px; /* Ajusta el valor del margen según el espacio que necesites */
+}
+
+.create-supplier-button {
+  margin-top: 10px; /* Ajusta el valor del margen según el espacio que necesites */
+}
+
+.form-group select {
+  appearance: none; /* Quita los estilos por defecto del navegador */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  background-size: 0.8em;
+  cursor: pointer; /* Indica que es un desplegable */
+}
+
+.form-group textarea {
+  min-height: 100px; /* Un poco más alto por defecto */
+}
+
+.form-actions {
+  margin-top: 30px; /* Más espacio antes de los botones de acción */
+  text-align: right;
+}
+
+.form-actions button {
+  padding: 12px 25px; /* Botones más grandes */
+  margin-left: 15px; /* Más espacio entre los botones */
+  border: none;
+  border-radius: 8px; /* Bordes más redondeados para los botones */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: opacity 0.2s ease-in-out; /* Transición suave para el hover */
+}
+
+.form-actions button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-actions button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.form-actions button:hover {
+  opacity: 0.8; /* Reduce la opacidad al hacer hover */
+}
+
+/* Estilos adicionales para mejorar la legibilidad y el espaciado */
+.product-creation-form h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center; /* Centra el título del formulario */
+}
+
+/* Pequeña mejora visual para el borde del formulario */
+.product-creation-form {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra para levantar el formulario */
+}

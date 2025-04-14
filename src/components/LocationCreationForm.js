@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LocationCreationForm.css'; // Importa  estilos
 
 function LocationCreationForm({ onLocationCreated }) {
   const [locationName, setLocationName] = useState('');
@@ -43,7 +44,7 @@ function LocationCreationForm({ onLocationCreated }) {
       {successMessage && <div className="success-message">{successMessage}</div>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="locationName">Nombre de la Ubicación:</label>
+          <label htmlFor="locationName">Nombre de la Ubicación:</label><br></br>
           <input
             type="text"
             id="locationName"
@@ -51,7 +52,7 @@ function LocationCreationForm({ onLocationCreated }) {
             onChange={handleInputChange}
             required
           />
-        </div>
+        </div><br></br>
         <button type="submit">Crear Ubicación</button>
       </form>
     </div>

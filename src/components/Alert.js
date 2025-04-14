@@ -1,6 +1,6 @@
 // src/components/Alert.js
 import React from 'react';
-import './Alert.css'; // Importa estilos si los tienes
+import './Alert.css'; // Importa estilos 
 
 function Alert({ message }) {
   if (!message) {

@@ -1,0 +1,48 @@
+* src/components/StockTable.css */
+
+.stock-table-container {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto; /* Para manejar tablas grandes horizontalmente */
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+.stock-table th,
+.stock-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.stock-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.stock-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Estilo para filas pares */
+}
+
+.stock-table tr:hover {
+  background-color: #e0e0e0; /* Resaltar la fila al pasar el ratón */
+}
+
+/* Estilos específicos para algunas columnas (opcional) */
+.stock-table .product-name {
+  width: 200px; /* Ejemplo de ancho para la columna de nombre del producto */
+}
+
+.stock-table .quantity {
+  width: 80px;
+  text-align: center;
+}
+
+.stock-table .unit {
+  width: 100px;
+}
+

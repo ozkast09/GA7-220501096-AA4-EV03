@@ -1,4 +1,4 @@
-JavaScript
+
 
 import React, { useState, useEffect } from 'react';
 
@@ -94,7 +94,7 @@ function ProductOutflowForm({ onProductOutflow }) {
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="product">Producto:</label>
+          <label htmlFor="product">Producto:</label><br></br>
           <select
             id="product"
             value={selectedProduct}
@@ -109,7 +109,7 @@ function ProductOutflowForm({ onProductOutflow }) {
           </select>
         </div>
         <div>
-          <label htmlFor="quantity">Cantidad:</label>
+          <label htmlFor="quantity">Cantidad:</label><br></br>
           <input
             type="number"
             id="quantity"
@@ -117,7 +117,7 @@ function ProductOutflowForm({ onProductOutflow }) {
             onChange={handleQuantityChange}
             min="1"
           />
-        </div>
+        </div><br></br>
         <button type="submit">Registrar Salida</button>
       </form>
     </div>

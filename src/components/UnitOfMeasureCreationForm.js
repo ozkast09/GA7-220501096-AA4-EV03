@@ -44,14 +44,14 @@ function UnitOfMeasureCreationForm({ onUnitOfMeasureCreated }) {
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Nombre de la Unidad de Medida:</label>
+          <label htmlFor="name">Nombre de la Unidad de Medida:</label><br></br>
           <input
             type="text"
             id="name"
             value={name}
             onChange={handleNameChange}
           />
-        </div>
+        </div><br></br>
         <button type="submit">Crear Unidad</button>
       </form>
     </div>

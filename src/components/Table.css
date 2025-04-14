@@ -1,0 +1,33 @@
+/* src/components/Table.css */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Para tablas grandes que pueden desbordarse horizontalmente */
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .data-table th,
+  .data-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f8f9fa; /* Un gris claro para la cabecera */
+    font-weight: bold;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Un gris muy claro para filas pares */
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #e0e0e0; /* Resaltar la fila al pasar el ratón */
+  }

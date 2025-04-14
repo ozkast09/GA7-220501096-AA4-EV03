@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './ProductEntryForm.css'; // Importa  estilos
 
 function ProductEntryForm({ products, onProductAdded }) {
   const [productId, setProductId] = useState('');
@@ -76,7 +77,7 @@ function ProductEntryForm({ products, onProductAdded }) {
       {successMessage && <div className="success-message">{successMessage}</div>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="productId">Producto:</label>
+          <label htmlFor="productId">Producto:</label><br></br>
           <select id="productId" value={productId} onChange={handleProductChange}>
             <option value="">Seleccionar producto</option>
             {products && products.map((product) => (
@@ -88,7 +89,7 @@ function ProductEntryForm({ products, onProductAdded }) {
           <p>Información del Producto: {selectedProduct.name} ({selectedProduct.code})</p>
         )}
         <div>
-          <label htmlFor="quantity">Cantidad:</label>
+          <label htmlFor="quantity">Cantidad:</label><br></br>
           <input
             type="number"
             id="quantity"
@@ -98,14 +99,14 @@ function ProductEntryForm({ products, onProductAdded }) {
           />
         </div>
         <div>
-          <label htmlFor="entryDate">Fecha de Ingreso:</label>
+          <label htmlFor="entryDate">Fecha de Ingreso:</label><br></br>
           <input
             type="date"
             id="entryDate"
             value={entryDate}
             onChange={handleDateChange}
           />
-        </div>
+        </div><br></br>
         <button type="submit">Ingresar Producto</button>
       </form>
     </div>

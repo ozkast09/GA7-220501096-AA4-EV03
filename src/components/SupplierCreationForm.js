@@ -58,7 +58,7 @@ function SupplierCreationForm() {
       )}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="supplierName">Nombre del Proveedor:</label>
+          <label htmlFor="supplierName">Nombre del Proveedor:</label><br></br>
           <input
             type="text"
             id="supplierName"
@@ -68,7 +68,7 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="supplierNIT">NIT/Documento:</label>
+          <label htmlFor="supplierNIT">NIT/Documento:</label><br></br>
           <input
             type="text"
             id="supplierNIT"
@@ -77,7 +77,7 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="contactPerson">Persona de Contacto:</label>
+          <label htmlFor="contactPerson">Persona de Contacto:</label><br></br>
           <input
             type="text"
             id="contactPerson"
@@ -86,7 +86,7 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="phone">Teléfono:</label>
+          <label htmlFor="phone">Teléfono:</label><br></br>
           <input
             type="tel"
             id="phone"
@@ -95,7 +95,7 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="email">Correo Electrónico:</label>
+          <label htmlFor="email">Correo Electrónico:</label><br></br>
           <input
             type="email"
             id="email"
@@ -104,7 +104,7 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="address">Dirección:</label>
+          <label htmlFor="address">Dirección:</label><br></br>
           <input
             type="text"
             id="address"
@@ -113,13 +113,13 @@ function SupplierCreationForm() {
           />
         </div>
         <div>
-          <label htmlFor="notes">Notas:</label>
+          <label htmlFor="notes">Notas:</label><br></br>
           <textarea
             id="notes"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
           />
-        </div>
+        </div><br></br>
         <button type="submit">Crear Proveedor</button>
       </form>
     </div>
